@@ -3,3 +3,4 @@ xcuserdata/
 build/
 LocalEnvironment.xcconfig
 ninja/
+*.tsv
