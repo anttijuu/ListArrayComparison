@@ -80,11 +80,6 @@ class SwiftListArrayComparisonApp {
       assert(idArray.count == list.count)
       assert(idArray.count == nativeArray.count)
 
-      //      print("-------- Printing array --------")
-      //      array.print()
-      //      print("-------- Printing list --------")
-      //      list.print()
-
       print("~ Accessing container tests ~~")
       print("~~ Accessing array...")
       let accessArrayDuration = accessContainer(container: array)
