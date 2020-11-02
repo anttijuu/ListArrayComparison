@@ -212,7 +212,7 @@ int binarySearch(int value, const TestContainer & container, std::pair<int,int> 
       range.first = 0;
       range.second = container.getCount() - 1;
    }
-   if (range.first >= range.second) {
+   if (range.first > range.second) {
       return -1;
    }
    int size = range.second - range.first;
@@ -223,7 +223,7 @@ int binarySearch(int value, const TestContainer & container, std::pair<int,int> 
    } else if (id > value) {
       return binarySearch(value, container, std::pair<int,int>(range.first, middle-1));
    } else {
-      return binarySearch(value, container, std::pair<int,int>(middle+1, range.second-1));
+      return binarySearch(value, container, std::pair<int,int>(middle+1, range.second));
    }
 }
 
